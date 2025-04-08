@@ -11,8 +11,11 @@ with open("data/trade_regions.json", "r") as f:
 # Convert to DataFrame
 df = pd.DataFrame(region_data)
 
+# Debug: show column headers to verify names
+st.write("🧪 Columns in dataset:", df.columns.tolist())
+
 # Load product-region mapping
-with open("data/product_mapping.json", "r") as f:
+with open("data/updated_product_mapping.json", "r") as f:
     product_mapping = json.load(f)
 
 # Display last updated timestamp
@@ -64,10 +67,15 @@ def highlight_top(row):
 
 # Display Table
 st.subheader("📊 Filtered Regional Market Opportunities")
-st.dataframe(
-    filtered_df[["Region", "Continent", "Demand Potential", "FX Reserve Status", "USD Readiness", "Buyer Type Focus", "Score"]].style.apply(highlight_top, axis=1),
-    use_container_width=True
-)
+
+try:
+    display_columns = [col for col in ["Region", "Continent", "Demand Potential", "FX Reserve Status", "USD Readiness", "Buyer Type Focus", "Score"] if col in filtered_df.columns]
+    st.dataframe(
+        filtered_df[display_columns].style.apply(highlight_top, axis=1),
+        use_container_width=True
+    )
+except KeyError as e:
+    st.error(f"❌ One or more columns not found: {e}")
 
 # Export
 st.download_button(
