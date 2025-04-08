@@ -15,7 +15,7 @@ df = pd.DataFrame(region_data)
 st.write("🧪 Columns in dataset:", df.columns.tolist())
 
 # Load product-region mapping
-with open("data/updated_product_mapping.json", "r") as f:
+with open("data/product_mapping.json", "r") as f:
     product_mapping = json.load(f)
 
 # Display last updated timestamp
