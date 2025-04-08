@@ -4,19 +4,8 @@ import pandas as pd
 
 st.set_page_config(page_title="🌍 Trade Region Targeting Tool", layout="wide")
 
-# Sidebar - GPT API Key and Query
-st.sidebar.title("🧠 AI Assistant")
-api_key = st.sidebar.text_input("OpenAI API Key", type="password", key="openai_api_key")
-if api_key:
-    user_prompt = st.sidebar.text_area("Ask about FX, risk, or market fit")
-    if st.sidebar.button("Ask GPT"):
-        from utils.gpt_api import query_gpt
-        result = query_gpt(user_prompt, api_key)
-        st.sidebar.markdown("### GPT Response")
-        st.sidebar.info(result)
-
 # Load full dataset
-with open("data/trade_regions.json", "r") as f:
+with open("data/trade_region.json", "r") as f:
     region_data = json.load(f)
 
 # Convert to DataFrame
