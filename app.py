@@ -6,7 +6,7 @@ st.set_page_config(page_title="🌍 Trade Region Targeting Tool", layout="wide")
 
 # Load full dataset
 with open("data/trade_regions.json", "r") as f:
-    regions_data = json.load(f)
+    region_data = json.load(f)
 
 # Convert to DataFrame
 df = pd.DataFrame(region_data)
