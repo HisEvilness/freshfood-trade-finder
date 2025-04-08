@@ -11,6 +11,13 @@ with open("data/trade_regions.json", "r") as f:
 # Convert to DataFrame
 df = pd.DataFrame(region_data)
 
+# Load product-region mapping
+with open("data/product_mapping.json", "r") as f:
+    product_mapping = json.load(f)
+
+# Display last updated timestamp
+st.caption(f"🗓️ Last updated: {pd.Timestamp.now().strftime('%Y-%m-%d')}")
+
 st.title("🌍 Target Regions Dashboard - The Fresh Food Group")
 
 st.markdown("""
@@ -23,7 +30,7 @@ Identify the best regions for food exports based on:
 """)
 
 # Column Filters
-col1, col2, col3, col4 = st.columns(4)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
     selected_continent = st.multiselect("🌎 Region", df['Continent'].unique())
 with col2:
@@ -32,6 +39,8 @@ with col3:
     selected_fx = st.multiselect("💱 FX Status", df['FX Reserve Status'].unique())
 with col4:
     selected_score = st.multiselect("🎯 Score", df['Score'].unique())
+with col5:
+    selected_product = st.selectbox("🍚 Product Focus", ["All"] + sorted(product_mapping.keys()))
 
 # Filter Logic
 filtered_df = df.copy()
@@ -43,11 +52,20 @@ if selected_fx:
     filtered_df = filtered_df[filtered_df['FX Reserve Status'].isin(selected_fx)]
 if selected_score:
     filtered_df = filtered_df[filtered_df['Score'].isin(selected_score)]
+if selected_product != "All":
+    product_regions = product_mapping[selected_product]
+    filtered_df = filtered_df[filtered_df['Region'].isin(product_regions)]
+
+# Highlight rows based on score
+def highlight_top(row):
+    if row['Score'] == "A":
+        return ['background-color: #d4edda'] * len(row)
+    return [''] * len(row)
 
 # Display Table
 st.subheader("📊 Filtered Regional Market Opportunities")
 st.dataframe(
-    filtered_df[["Region", "Continent", "Demand Potential", "FX Reserve Status", "USD Readiness", "Buyer Type Focus", "Score"]],
+    filtered_df[["Region", "Continent", "Demand Potential", "FX Reserve Status", "USD Readiness", "Buyer Type Focus", "Score"]].style.apply(highlight_top, axis=1),
     use_container_width=True
 )
 
