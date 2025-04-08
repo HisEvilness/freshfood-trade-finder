@@ -2,6 +2,17 @@ import streamlit as st
 import json
 import pandas as pd
 
+st.sidebar.header("⚙️ GPT API Settings")
+api_key = st.sidebar.text_input("OpenAI API Key", type="password")
+
+if api_key:
+    user_prompt = st.text_area("Enter question about trade or FX")
+    if st.button("Ask GPT"):
+        from utils.gpt_api import query_gpt
+        result = query_gpt(user_prompt, api_key)
+        st.markdown("### GPT Response")
+        st.info(result)
+
 # Load trade region data
 with open("data/top_25_trade_regions.json", "r") as f:
     region_data = json.load(f)
