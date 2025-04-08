@@ -1,257 +1,317 @@
 [
   {
-    "Region":"UAE",
+    "Region":"UAE \ud83c\udde6\ud83c\uddea",
     "Demand Potential":"High",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Wholesaler",
-      "Distributor",
-      "Retail Importer"
-    ]
+    "USD Readiness":"Easy",
+    "Buyer Type Focus":"Halal wholesalers, supermarket distributors",
+    "Score":"A",
+    "Continent":"Middle East"
   },
   {
-    "Region":"Saudi Arabia",
+    "Region":"Saudi Arabia \ud83c\uddf8\ud83c\udde6",
     "Demand Potential":"High",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Institutional",
-      "Government",
-      "Wholesaler"
-    ]
+    "USD Readiness":"Easy",
+    "Buyer Type Focus":"Horeca suppliers, government caterers",
+    "Score":"A",
+    "Continent":"Middle East"
   },
   {
-    "Region":"Spain",
-    "Demand Potential":"High",
+    "Region":"USA \ud83c\uddfa\ud83c\uddf8",
+    "Demand Potential":"Medium",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Private Label",
-      "Retailer",
-      "Distributor"
-    ]
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Ethnic importers, wellness\/retail buyers",
+    "Score":"A",
+    "Continent":"North America"
   },
   {
-    "Region":"Netherlands",
-    "Demand Potential":"High",
+    "Region":"Spain \ud83c\uddea\ud83c\uddf8",
+    "Demand Potential":"Medium\u2013High",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Logistics Hub",
-      "Re-exporters",
-      "Specialty Retailers"
-    ]
+    "USD Readiness":"EUR-based",
+    "Buyer Type Focus":"Private label brands, spice importers",
+    "Score":"A\u2013B",
+    "Continent":"Europe"
   },
   {
-    "Region":"South Africa",
-    "Demand Potential":"Medium-High",
+    "Region":"Netherlands \ud83c\uddf3\ud83c\uddf1",
+    "Demand Potential":"Medium\u2013High",
+    "FX Reserve Status":"Strong",
+    "USD Readiness":"EUR-based",
+    "Buyer Type Focus":"Private label brands, spice importers",
+    "Score":"A\u2013B",
+    "Continent":"Europe"
+  },
+  {
+    "Region":"South Africa \ud83c\uddff\ud83c\udde6",
+    "Demand Potential":"Medium\u2013High",
+    "FX Reserve Status":"Volatile",
+    "USD Readiness":"Watch ZAR",
+    "Buyer Type Focus":"Distributors, warehouse buyers",
+    "Score":"B",
+    "Continent":"Africa"
+  },
+  {
+    "Region":"Brazil \ud83c\udde7\ud83c\uddf7",
+    "Demand Potential":"Medium",
+    "FX Reserve Status":"Low\u2013Medium",
+    "USD Readiness":"Hedged",
+    "Buyer Type Focus":"Food agents, commodity brokers",
+    "Score":"B",
+    "Continent":"South America"
+  },
+  {
+    "Region":"Uzbekistan \ud83c\uddfa\ud83c\uddff",
+    "Demand Potential":"Limited",
     "FX Reserve Status":"Medium",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Wholesaler",
-      "Food Service"
-    ]
+    "USD Readiness":"Regional",
+    "Buyer Type Focus":"Cross-trade buyers, selective sourcing",
+    "Score":"B\u2013C",
+    "Continent":"Central Asia"
   },
   {
-    "Region":"Brazil",
-    "Demand Potential":"Medium",
-    "FX Reserve Status":"Medium-Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Commodity Buyer",
-      "Ingredient Processor"
-    ]
+    "Region":"Egypt \ud83c\uddea\ud83c\uddec",
+    "Demand Potential":"Demand exists",
+    "FX Reserve Status":"Poor",
+    "USD Readiness":"Delays",
+    "Buyer Type Focus":"Advance payment or workaround",
+    "Score":"C",
+    "Continent":"Africa"
   },
   {
-    "Region":"USA",
+    "Region":"Nigeria \ud83c\uddf3\ud83c\uddec",
+    "Demand Potential":"Demand exists",
+    "FX Reserve Status":"Poor",
+    "USD Readiness":"Delays",
+    "Buyer Type Focus":"Advance payment or workaround",
+    "Score":"C",
+    "Continent":"Africa"
+  },
+  {
+    "Region":"Germany \ud83c\udde9\ud83c\uddea",
     "Demand Potential":"High",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Health Retailer",
-      "Distributor",
-      "Ethnic Food Stores"
-    ]
+    "USD Readiness":"EUR-based",
+    "Buyer Type Focus":"Retail chains, industrial importers",
+    "Score":"A",
+    "Continent":"Europe"
   },
   {
-    "Region":"Germany",
-    "Demand Potential":"High",
+    "Region":"France \ud83c\uddeb\ud83c\uddf7",
+    "Demand Potential":"Medium\u2013High",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Retail Chain",
-      "Food Startups"
-    ]
+    "USD Readiness":"EUR-based",
+    "Buyer Type Focus":"Organic food chains, gourmet importers",
+    "Score":"A\u2013B",
+    "Continent":"Europe"
   },
   {
-    "Region":"France",
-    "Demand Potential":"Medium-High",
-    "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Retail",
-      "Distributors"
-    ]
-  },
-  {
-    "Region":"Italy",
+    "Region":"Italy \ud83c\uddee\ud83c\uddf9",
     "Demand Potential":"Medium",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Gourmet Retailers",
-      "Ethnic Food Importers"
-    ]
+    "USD Readiness":"EUR-based",
+    "Buyer Type Focus":"Ethnic buyers, private label",
+    "Score":"A\u2013B",
+    "Continent":"Europe"
   },
   {
-    "Region":"United Kingdom",
+    "Region":"Canada \ud83c\udde8\ud83c\udde6",
     "Demand Potential":"High",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Wholesalers",
-      "Supermarkets"
-    ]
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Wellness buyers, ethnic markets",
+    "Score":"A",
+    "Continent":"North America"
   },
   {
-    "Region":"Canada",
-    "Demand Potential":"High",
-    "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Retailers",
-      "Health Product Distributors"
-    ]
-  },
-  {
-    "Region":"Egypt",
-    "Demand Potential":"High",
-    "FX Reserve Status":"Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Importers",
-      "NGO Procurement"
-    ]
-  },
-  {
-    "Region":"Nigeria",
-    "Demand Potential":"High",
-    "FX Reserve Status":"Very Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Government Programs",
-      "Food Relief"
-    ]
-  },
-  {
-    "Region":"Turkey",
+    "Region":"Mexico \ud83c\uddf2\ud83c\uddfd",
     "Demand Potential":"Medium",
     "FX Reserve Status":"Medium",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Local Distributor",
-      "Market Chains"
-    ]
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Food manufacturers, wholesalers",
+    "Score":"B",
+    "Continent":"North America"
   },
   {
-    "Region":"Pakistan",
+    "Region":"Chile \ud83c\udde8\ud83c\uddf1",
+    "Demand Potential":"Medium",
+    "FX Reserve Status":"Strong",
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Exporters, food brokers",
+    "Score":"B",
+    "Continent":"South America"
+  },
+  {
+    "Region":"Argentina \ud83c\udde6\ud83c\uddf7",
+    "Demand Potential":"Low\u2013Medium",
+    "FX Reserve Status":"Poor",
+    "USD Readiness":"Limited",
+    "Buyer Type Focus":"Regional importers",
+    "Score":"C",
+    "Continent":"South America"
+  },
+  {
+    "Region":"India \ud83c\uddee\ud83c\uddf3",
+    "Demand Potential":"Low",
+    "FX Reserve Status":"Strong",
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Selective processors",
+    "Score":"C",
+    "Continent":"Asia"
+  },
+  {
+    "Region":"Pakistan \ud83c\uddf5\ud83c\uddf0",
     "Demand Potential":"Low",
     "FX Reserve Status":"Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Local Traders",
-      "Manufacturers"
-    ]
+    "USD Readiness":"Difficult",
+    "Buyer Type Focus":"Internal exporters",
+    "Score":"C",
+    "Continent":"Asia"
   },
   {
-    "Region":"Indonesia",
-    "Demand Potential":"High",
-    "FX Reserve Status":"Medium-Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Distributors",
-      "Retailers"
-    ]
-  },
-  {
-    "Region":"Malaysia",
+    "Region":"Indonesia \ud83c\uddee\ud83c\udde9",
     "Demand Potential":"High",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Halal Distributors",
-      "Exporters"
-    ]
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Distributors, halal food importers",
+    "Score":"A",
+    "Continent":"Asia"
   },
   {
-    "Region":"Bangladesh",
+    "Region":"Malaysia \ud83c\uddf2\ud83c\uddfe",
+    "Demand Potential":"High",
+    "FX Reserve Status":"Strong",
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Halal suppliers, processors",
+    "Score":"A",
+    "Continent":"Asia"
+  },
+  {
+    "Region":"Vietnam \ud83c\uddfb\ud83c\uddf3",
     "Demand Potential":"Medium",
-    "FX Reserve Status":"Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Bulk Importers",
-      "Institutional Buyers"
-    ]
+    "FX Reserve Status":"Medium",
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"OEM buyers, food processors",
+    "Score":"B",
+    "Continent":"Asia"
   },
   {
-    "Region":"Singapore",
+    "Region":"Thailand \ud83c\uddf9\ud83c\udded",
     "Demand Potential":"Medium",
     "FX Reserve Status":"Strong",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Food Hubs",
-      "Re-exporters"
-    ]
+    "USD Readiness":"Native",
+    "Buyer Type Focus":"Hospitality importers",
+    "Score":"B",
+    "Continent":"Asia"
   },
   {
-    "Region":"Vietnam",
+    "Region":"Bangladesh \ud83c\udde7\ud83c\udde9",
+    "Demand Potential":"Medium",
+    "FX Reserve Status":"Low",
+    "USD Readiness":"Limited",
+    "Buyer Type Focus":"Bulk importers",
+    "Score":"C",
+    "Continent":"Asia"
+  },
+  {
+    "Region":"Sri Lanka \ud83c\uddf1\ud83c\uddf0",
+    "Demand Potential":"Low\u2013Medium",
+    "FX Reserve Status":"Poor",
+    "USD Readiness":"Delayed",
+    "Buyer Type Focus":"Selective buyers",
+    "Score":"C",
+    "Continent":"Asia"
+  },
+  {
+    "Region":"Turkey \ud83c\uddf9\ud83c\uddf7",
+    "Demand Potential":"Medium",
+    "FX Reserve Status":"Volatile",
+    "USD Readiness":"Local currency",
+    "Buyer Type Focus":"Retail and processors",
+    "Score":"B",
+    "Continent":"Europe\/Asia"
+  },
+  {
+    "Region":"Jordan \ud83c\uddef\ud83c\uddf4",
     "Demand Potential":"Medium",
     "FX Reserve Status":"Medium",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Ingredient Buyers",
-      "Processors"
-    ]
+    "USD Readiness":"Easy",
+    "Buyer Type Focus":"Hotel and restaurant supply",
+    "Score":"B",
+    "Continent":"Middle East"
   },
   {
-    "Region":"Kenya",
+    "Region":"Iraq \ud83c\uddee\ud83c\uddf6",
     "Demand Potential":"Medium",
     "FX Reserve Status":"Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Relief Networks",
-      "NGOs"
-    ]
+    "USD Readiness":"Complex",
+    "Buyer Type Focus":"Government and NGO contracts",
+    "Score":"C",
+    "Continent":"Middle East"
   },
   {
-    "Region":"Tanzania",
-    "Demand Potential":"Medium",
-    "FX Reserve Status":"Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Local Traders",
-      "Gov Contracts"
-    ]
+    "Region":"Qatar \ud83c\uddf6\ud83c\udde6",
+    "Demand Potential":"High",
+    "FX Reserve Status":"Strong",
+    "USD Readiness":"Easy",
+    "Buyer Type Focus":"Catering and upscale food chains",
+    "Score":"A",
+    "Continent":"Middle East"
   },
   {
-    "Region":"Iraq",
-    "Demand Potential":"Medium",
-    "FX Reserve Status":"Low",
-    "USD Readiness":false,
-    "Buyer Type Focus":[
-      "Public Buyers",
-      "UN Programs"
-    ]
+    "Region":"Kuwait \ud83c\uddf0\ud83c\uddfc",
+    "Demand Potential":"High",
+    "FX Reserve Status":"Strong",
+    "USD Readiness":"Easy",
+    "Buyer Type Focus":"Halal distributors, food importers",
+    "Score":"A",
+    "Continent":"Middle East"
   },
   {
-    "Region":"Jordan",
+    "Region":"Oman \ud83c\uddf4\ud83c\uddf2",
+    "Demand Potential":"Medium\u2013High",
+    "FX Reserve Status":"Strong",
+    "USD Readiness":"Easy",
+    "Buyer Type Focus":"Foodservice and specialty importers",
+    "Score":"B",
+    "Continent":"Middle East"
+  },
+  {
+    "Region":"Morocco \ud83c\uddf2\ud83c\udde6",
     "Demand Potential":"Medium",
     "FX Reserve Status":"Medium",
-    "USD Readiness":true,
-    "Buyer Type Focus":[
-      "Importers",
-      "Hotel Supply"
-    ]
+    "USD Readiness":"Hedged",
+    "Buyer Type Focus":"Food and beverage processors",
+    "Score":"B",
+    "Continent":"Africa"
+  },
+  {
+    "Region":"Algeria \ud83c\udde9\ud83c\uddff",
+    "Demand Potential":"Medium",
+    "FX Reserve Status":"Low",
+    "USD Readiness":"Challenging",
+    "Buyer Type Focus":"Retail buyers, state-linked",
+    "Score":"C",
+    "Continent":"Africa"
+  },
+  {
+    "Region":"Kenya \ud83c\uddf0\ud83c\uddea",
+    "Demand Potential":"Medium",
+    "FX Reserve Status":"Low",
+    "USD Readiness":"Challenging",
+    "Buyer Type Focus":"Local networks, humanitarian buyers",
+    "Score":"C",
+    "Continent":"Africa"
+  },
+  {
+    "Region":"Tanzania \ud83c\uddf9\ud83c\uddff",
+    "Demand Potential":"Medium",
+    "FX Reserve Status":"Low",
+    "USD Readiness":"Difficult",
+    "Buyer Type Focus":"Institutional and NGO",
+    "Score":"C",
+    "Continent":"Africa"
   }
 ]
