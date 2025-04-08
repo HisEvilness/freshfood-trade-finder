@@ -16,7 +16,7 @@ if api_key:
         st.sidebar.info(result)
 
 # Load full dataset
-with open("data/top_50_trade_regions.json", "r") as f:
+with open("data/trade_regions.json", "r") as f:
     region_data = json.load(f)
 
 # Convert to DataFrame
