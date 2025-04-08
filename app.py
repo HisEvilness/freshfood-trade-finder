@@ -2,6 +2,11 @@ import streamlit as st
 import json
 import pandas as pd
 
+st.set_page_config(page_title="🌍 Trade Region Targeting Tool", layout="wide")
+
+st.sidebar.header("⚙️ GPT API Settings")
+api_key = st.sidebar.text_input("OpenAI API Key", type="password")
+
 st.sidebar.header("⚙️ GPT API Settings")
 api_key = st.sidebar.text_input("OpenAI API Key", type="password")
 
@@ -19,9 +24,6 @@ with open("data/top_25_trade_regions.json", "r") as f:
 
 # Convert to DataFrame for filtering
 df = pd.DataFrame(region_data)
-
-st.set_page_config(page_title="🌍 Trade Region Targeting Tool", layout="wide")
-st.title("🌍 Trade Focus Finder - The Fresh Food Group")
 
 st.markdown("""
 This tool helps identify high-potential countries for B2B food export based on:
