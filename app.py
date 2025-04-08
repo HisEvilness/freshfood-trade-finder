@@ -14,7 +14,7 @@ df = pd.DataFrame(region_data)
 # Debug: show column headers to verify names
 st.write("🧪 Columns in dataset:", df.columns.tolist())
 
-# Load product-region mapping
+# Load product-region mapping (corrected to original filename)
 with open("data/product_mapping.json", "r") as f:
     product_mapping = json.load(f)
 
