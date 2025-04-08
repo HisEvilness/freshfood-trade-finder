@@ -11,7 +11,7 @@ with open("data/trade_region.json", "r") as f:
 # Convert to DataFrame
 df = pd.DataFrame(region_data)
 
-st.title("🌍 Target Region Dashboard - The Fresh Food Group")
+st.title("🌍 Target Regions Dashboard - The Fresh Food Group")
 
 st.markdown("""
 Identify the best regions for food exports based on:
@@ -45,7 +45,7 @@ if selected_score:
     filtered_df = filtered_df[filtered_df['Score'].isin(selected_score)]
 
 # Display Table
-st.subheader("📊 Filtered Market Opportunities")
+st.subheader("📊 Filtered Regional Market Opportunities")
 st.dataframe(
     filtered_df[["Region", "Continent", "Demand Potential", "FX Reserve Status", "USD Readiness", "Buyer Type Focus", "Score"]],
     use_container_width=True
@@ -55,6 +55,6 @@ st.dataframe(
 st.download_button(
     label="📥 Download Filtered List (CSV)",
     data=filtered_df.to_csv(index=False).encode("utf-8"),
-    file_name="filtered_trade_targets.csv",
+    file_name="filtered_trade_regions.csv",
     mime="text/csv"
 )
