@@ -33,21 +33,23 @@ Identify the best regions for food exports based on:
 """)
 
 # Column Filters
+available_columns = df.columns.tolist()
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    selected_continent = st.multiselect("🌎 Region", df['Continent'].unique())
+    continent_options = sorted(df['Continent'].unique())
+    selected_continent = st.multiselect("🌎 Region", ["All"] + continent_options)
 with col2:
-    selected_demand = st.multiselect("📈 Demand", df['Demand Potential'].unique())
+    selected_demand = st.multiselect("📈 Demand", df['Demand Potential'].unique()) if 'Demand Potential' in available_columns else []
 with col3:
-    selected_fx = st.multiselect("💱 FX Status", df['FX Reserve Status'].unique())
+    selected_fx = st.multiselect("💱 FX Status", df['FX Reserve Status'].unique()) if 'FX Reserve Status' in available_columns else []
 with col4:
-    selected_score = st.multiselect("🎯 Score", df['Score'].unique())
+    selected_score = st.multiselect("🎯 Score", df['Score'].unique()) if 'Score' in available_columns else []
 with col5:
     selected_product = st.selectbox("🍚 Product Focus", ["All"] + sorted(product_mapping.keys()))
 
 # Filter Logic
 filtered_df = df.copy()
-if selected_continent:
+if "All" not in selected_continent and selected_continent:
     filtered_df = filtered_df[filtered_df['Continent'].isin(selected_continent)]
 if selected_demand:
     filtered_df = filtered_df[filtered_df['Demand Potential'].isin(selected_demand)]
@@ -59,10 +61,10 @@ if selected_product != "All":
     product_regions = product_mapping[selected_product]
     filtered_df = filtered_df[filtered_df['Region'].isin(product_regions)]
 
-# Highlight rows based on score
+# Highlight rows based on score with better contrast
 def highlight_top(row):
-    if row['Score'] == "A":
-        return ['background-color: #d4edda'] * len(row)
+    if 'Score' in row and row['Score'] == "A":
+        return ['background-color: #2e7d32; color: white'] * len(row)
     return [''] * len(row)
 
 # Display Table
