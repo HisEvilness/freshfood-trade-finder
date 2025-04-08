@@ -5,7 +5,7 @@ def query_gpt(prompt, api_key):
 
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",  # More widely available than gpt-4
             messages=[{"role": "user", "content": prompt}],
             temperature=0.3
         )
